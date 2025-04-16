@@ -35,12 +35,13 @@ This project is a full-stack web application that enables seamless data ingestio
 2. Create and activate virtual environment:
    ```bash
    python -m venv venv
-.\venv\Scripts\activate
+   .\venv\Scripts\activate
 
 3. pip install fastapi uvicorn clickhouse-connect python-multipart pandas
    ```bash
    uvicorn main:app --reload
-   http://127.0.0.1:8000
+
+ http://127.0.0.1:8000
 
 
  ###  Frontend Setup  
@@ -57,9 +58,10 @@ This project is a full-stack web application that enables seamless data ingestio
   ```bash
   npm start
 
-This will open the frontend at: http://localhost:3000
+4. This will open the frontend at: http://localhost:3000
 
  ### Set Up ClickHouse Using Docker
+
  If you don't have ClickHouse set up, run this command to start it using Docker:
  
  ```bash
@@ -67,24 +69,27 @@ This will open the frontend at: http://localhost:3000
  -p 9000:9000 -p 8123:8123 \
  -e CLICKHOUSE_PASSWORD=YourPassword \
  clickhouse/clickhouse-server
+ ```
 
-Access ClickHouse web UI: http://localhost:8123
+- Access ClickHouse web UI: http://localhost:8123
 
-Login using:
+- Login using:
 
-Username: default
+- Username: default
 
-Password: YourPassword
+- Password: YourPassword
 
-To connect from the app:
+- To connect from the app:
 
-Host: localhost
+- Host: localhost
 
-Port: 8123
+- Port: 8123
 
-Username: default
+- Username: default
 
-JWT/Password: YourPassword
+- JWT/Password: YourPassword
+
+---
 
 
 
