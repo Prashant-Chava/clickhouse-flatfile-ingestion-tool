@@ -63,14 +63,13 @@ This project is a full-stack web application that enables seamless data ingestio
 
   ### Set Up ClickHouse Using Docker
   
-  If you don't have ClickHouse set up, run this command to start it using Docker:
+5. If you don't have ClickHouse set up, run this command to start it using Docker:
+   ```bash
+   docker run -d --name clickhouse \
+   -p 9000:9000 -p 8123:8123 \
+   -e CLICKHOUSE_PASSWORD=YourPassword \
+   clickhouse/clickhouse-server
  
-
- docker run -d --name clickhouse \
- -p 9000:9000 -p 8123:8123 \
- -e CLICKHOUSE_PASSWORD=YourPassword \
- clickhouse/clickhouse-server
- ```
 
 - Access ClickHouse web UI: http://localhost:8123
 
