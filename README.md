@@ -33,39 +33,42 @@ This project is a full-stack web application that enables seamless data ingestio
    cd backend
 
 2. Create and activate virtual environment:
- ``bash
- python -m venv venv
+   ```bash
+   python -m venv venv
 .\venv\Scripts\activate
 
-3. Install dependencies:
-pip install fastapi uvicorn clickhouse-connect python-multipart pandas
+3. pip install fastapi uvicorn clickhouse-connect python-multipart pandas
+   ```bash
+   uvicorn main:app --reload
+   http://127.0.0.1:8000
 
-4. Run the FastAPI backend:
-  uvicorn main:app --reload
-    Your backend will be running at: http://127.0.0.1:8000
 
  ###  Frontend Setup  
 
- 1. Navigate to the frontend folder:
+1. Navigate to the frontend folder:
+   ```bash
    cd frontend
 
 2. Install dependencies:
-  npm install
+   ```bash
+   npm install
 
 3. Start the React development server:
+  ```bash
   npm start
 
-  This will open the frontend at: http://localhost:3000
+This will open the frontend at: http://localhost:3000
 
  ### Set Up ClickHouse Using Docker
  If you don't have ClickHouse set up, run this command to start it using Docker:
-
+ 
+ ```bash
  docker run -d --name clickhouse \
-  -p 9000:9000 -p 8123:8123 \
-  -e CLICKHOUSE_PASSWORD=YourPassword \
-  clickhouse/clickhouse-server
+ -p 9000:9000 -p 8123:8123 \
+ -e CLICKHOUSE_PASSWORD=YourPassword \
+ clickhouse/clickhouse-server
 
-  Access ClickHouse web UI: http://localhost:8123
+Access ClickHouse web UI: http://localhost:8123
 
 Login using:
 
