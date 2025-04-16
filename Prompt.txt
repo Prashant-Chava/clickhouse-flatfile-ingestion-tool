@@ -1,0 +1,30 @@
+
+Below is a record of key prompts used:
+---
+
+## Backend (FastAPI + ClickHouse)
+
+- "Generate a FastAPI endpoint to connect to ClickHouse using JWT authentication."
+- "Create an endpoint that uploads and reads a CSV file using FastAPI and pandas."
+- "How to insert pandas DataFrame rows into a ClickHouse table using clickhouse-connect?"
+- "Give me a FastAPI route that exports data from ClickHouse to a downloadable CSV."
+- "Handle exceptions in FastAPI and return user-friendly messages."
+- "Add a route that previews the first 100 rows from ClickHouse based on selected columns."
+
+---
+
+## Frontend (React + Axios)
+
+- "How to build a React form to connect to a ClickHouse backend using Axios."
+- "Create a React component to upload and preview CSV files using an API."
+- "Make a progress bar animation while exporting data from ClickHouse."
+- "Style React form inputs and buttons using clean custom CSS."
+
+---
+
+## Docker + ClickHouse
+
+- "Docker command to run ClickHouse with password"
+- "ClickHouse SQL to create a simple user_data table"
+
+---
