@@ -55,16 +55,17 @@ This project is a full-stack web application that enables seamless data ingestio
    npm install
 
 3. Start the React development server:
-  ```bash
-  npm start
+   ```bash
+   npm start
 
 4. This will open the frontend at: http://localhost:3000
 
- ### Set Up ClickHouse Using Docker
 
- If you don't have ClickHouse set up, run this command to start it using Docker:
+  ### Set Up ClickHouse Using Docker
+  
+  If you don't have ClickHouse set up, run this command to start it using Docker:
  
- ```bash
+
  docker run -d --name clickhouse \
  -p 9000:9000 -p 8123:8123 \
  -e CLICKHOUSE_PASSWORD=YourPassword \
